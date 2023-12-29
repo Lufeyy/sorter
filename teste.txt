@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites 2023</title>
+    <link rel="shortcut icon" href="http://sv.tinypic.com?ref=qq68e9">
+
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0 auto;
+            width: 600px;
+        }
+
+        #mainTable {
+            font-size: 19px;
+            text-align: center;
+            vertical-align: middle;
+            width: 410px;
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 10px 5px;
+        }
+
+        #leftField, #rightField, .middleField {
+            width: 120px;
+            height: 150px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .middleField {
+            height: 70px;
+        }
+
+        a {
+            color: #e097d9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #8f8f8f;
+        }
+
+        #resultField {
+            text-align: center;
+        }
+
+        .instructions, .other {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="instructions">
+        <br /><br />
+        <b>FAVORITES 2023</b><br /><br>pick who you like better in each battle to get an accurate list of your<br />favorite members from the group.<br />note: hitting 'no opinion’ or 'I like both’ frequently will negatively affect your results.<br /><br />
+    </p>
+
+    <table id="mainTable">
+        <tr>
+            <td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;"><b>battle #1<br>0% sorted.</b></td>
+        </tr>
+        <tr>
+            <td id="leftField" onclick="if(finishFlag==0) sortList(-1);" rowspan="2" style="text-align:center;"></td>
+            <td class="middleField" onclick="if(finishFlag==0) sortList(0);" style="text-align:center;">I like both</td>
+            <td id="rightField" onclick="if(finishFlag==0) sortList(1);" rowspan="2" style="text-align:center;"></td>
+        </tr>
+        <tr>
+            <td class="middleField" onclick="if(finishFlag==0) sortList(0);" style="text-align:center;">no opinion</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <div id="resultField">
+        <br>
+    </div>
+
+    <script>
+        // Your JavaScript code goes here
+    </script>
+
+    <p class="other">
+        <small><br /><br />used with permission.<br /><br/><a href="http://biasorter.tumblr.com/">created by biasorter</a>.</small>
+    </p>
+
+</body>
+</html>
